@@ -1,767 +1,732 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="HTML&CSS Full Template" />
-        <meta name="author" content="Mohanad Ayoub" />
-        <meta name="keywords" content="HTML, CSS" />
-        <title>Dashboard</title>
-        <link rel="stylesheet" href="Css/framework.css" />
-        <link rel="stylesheet" href="Css/master.css" />
-        <!-- calling Font Awsome library -->
-        <link rel="stylesheet" href="Css/all.min.css" />
-        <!-- Make all elements render normally -->
-        <link rel="stylesheet" href="Css/normalize.css" />
-        <!-- getting Cairo font from google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-            rel="stylesheet"
-        />
-    </head>
-    <body>
-        <div class="page d-flex">
-            <div class="sidebar">
-                <h2 class="txt-c">Mohanad</h2>
-                <nav>
-                    <ul
-                        class="d-flex"
-                        id="Menu"
-                        aria-label="Navigation Menu"
-                        aria-controls="Menu"
-                        aria-expanded="true"
-                    >
-                        <li>
-                            <a href="index.html" class="p-10 mb-5 rad-6"
-                                ><i
-                                    class="fa-regular fa-chart-bar fa-fw"
-                                    aria-hidden="true"
-                                ></i
-                                ><span class="ml-10">Dashboard</span></a
-                            >
-                        </li>
-                        <li>
-                            <a href="settings.html" class="mb-5 p-10 rad-6-10"
-                                ><i
-                                    class="fa-solid fa-gear fa-fw"
-                                    aria-hidden="true"
-                                ></i
-                                ><span class="ml-10">Settings</span></a
-                            >
-                        </li>
-                        <li>
-                            <a href="profile.html" class="mb-5 p-10 rad-6-10"
-                                ><i
-                                    class="fa-regular fa-user fa-fw"
-                                    aria-hidden="true"
-                                ></i
-                                ><span class="ml-10">Profile</span></a
-                            >
-                        </li>
-                        <li>
-                            <a href="projects.html" class="mb-5 p-10 rad-6-10"
-                                ><i
-                                    class="fa-solid fa-diagram-project fa-fw"
-                                    aria-hidden="true"
-                                ></i
-                                ><span class="ml-10">Projects</span></a
-                            >
-                        </li>
-                        <li>
-                            <a href="courses.html" class="mb-5 p-10 rad-6-10"
-                                ><i
-                                    class="fa-solid fa-graduation-cap fa-fw"
-                                    aria-hidden="true"
-                                ></i
-                                ><span class="ml-10">Courses</span></a
-                            >
-                        </li>
-                        <li>
-                            <a href="friend.html" class="mb-5 p-10 rad-6-10"
-                                ><i
-                                    class="fa-regular fa-circle-user fa-fw"
-                                    aria-hidden="true"
-                                ></i
-                                ><span class="ml-10">Friends</span></a
-                            >
-                        </li>
-                        <li>
-                            <a href="files.html" class="mb-5 p-10 rad-6-10"
-                                ><i
-                                    class="fa-regular fa-file fa-fw"
-                                    aria-hidden="true"
-                                ></i
-                                ><span class="ml-10">Files</span></a
-                            >
-                        </li>
-                        <li>
-                            <a href="plans.html" class="mb-5 p-10 rad-6-10"
-                                ><i
-                                    class="fa-regular fa-credit-card fa-fw"
-                                    aria-hidden="true"
-                                ></i
-                                ><span class="ml-10">Plans</span></a
-                            >
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="content">
-                <header class="d-flex p-15 bg-white">
-                    <div class="search">
-                        <input
-                            type="search"
-                            name="search"
-                            class="search p-10"
-                            placeholder="Type A Keyword"
-                        />
-                    </div>
-                    <div class="user">
-                        <span
-                            ><i
-                                class="fa-regular fa-bell fa-lg mr-10"
-                                aria-hidden="true"
-                            ></i
-                        ></span>
-                        <img
-                            src="Images/dark.webp"
-                            alt="profile"
-                            class="circle"
-                        />
-                    </div>
-                </header>
-                <div class="content">
-                    <h1>Dashboard</h1>
-                    <div class="boards mr-20 ml-20 grid-sys">
-                        <div class="welcome">
-                            <div class="head p-20">
-                                <div class="text">
-                                    <h3 class="">Welcome</h3>
-                                    <p>Mohanad</p>
-                                </div>
-                                <div class="image">
-                                    <img
-                                        src="Images/laptop.webp"
-                                        alt="laptop"
-                                    />
-                                </div>
-                                <img
-                                    src="Images/dark.webp"
-                                    alt="profile"
-                                    class="circle"
-                                />
-                            </div>
-                            <ul class="stats p-20 mt-20 mb-20">
-                                <li>
-                                    Mohanad Ayoub
-                                    <p>Developer</p>
-                                </li>
-                                <li>
-                                    80
-                                    <p>Projects</p>
-                                </li>
-                                <li>
-                                    $8500
-                                    <p>Earned</p>
-                                </li>
-                            </ul>
-                            <a href="profile.html" class="rad-6">Profie</a>
-                        </div>
-                        <div class="draft bg-white">
-                            <h3 class="">Quick draft</h3>
-                            <p>Write A Draft For Your Ideas</p>
-                            <form action="">
-                                <input
-                                    type="text"
-                                    name="title"
-                                    placeholder="Title"
-                                />
-                                <textarea
-                                    name="Thought"
-                                    placeholder="Your Thought"
-                                ></textarea>
-                                <input type="submit" value="Save" />
-                            </form>
-                        </div>
-                        <div class="yearly-target">
-                            <h3>Yearly Target</h3>
-                            <p>Targets Of The Year</p>
-                            <div class="line b">
-                                <div class="icon blue">
-                                    <i
-                                        class="fa-solid fa-dollar-sign fa-lg c-blue"
-                                        aria-hidden="true"
-                                    ></i>
-                                </div>
-                                <div class="prog">
-                                    <p>Money</p>
-                                    <div class="details">
-                                        <span class="number">$20.000</span>
-                                        <span class="b80">80%</span>
-                                    </div>
-                                    <span class="bar"></span>
-                                </div>
-                            </div>
-                            <div class="line r">
-                                <div class="icon red">
-                                    <i
-                                        class="fa-solid fa-code fa-lg c-orange"
-                                        aria-hidden="true"
-                                    ></i>
-                                </div>
-                                <div class="prog">
-                                    <p>Projects</p>
-                                    <div class="details">
-                                        <span class="number">24</span>
-                                        <span class="r55">55%</span>
-                                    </div>
-                                    <span class="bar"></span>
-                                </div>
-                            </div>
-                            <div class="line g">
-                                <div class="icon green">
-                                    <i
-                                        class="fa-solid fa-user fa-lg c-green"
-                                        aria-hidden="true"
-                                    ></i>
-                                </div>
-                                <div class="prog">
-                                    <p>Team</p>
-                                    <div class="details">
-                                        <span class="number">12</span>
-                                        <span class="g75">75%</span>
-                                    </div>
-                                    <span class="bar"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ticket">
-                            <h3>Tickets Statistics</h3>
-                            <p>Everything About Support Tickets</p>
-                            <div class="cards-holder">
-                                <div class="card">
-                                    <i
-                                        class="orange fa-regular fa-rectangle-list fa-2x mb-10 c-orange"
-                                        aria-hidden="true"
-                                    ></i>
-                                    <p>2500</p>
-                                    <p>Total</p>
-                                </div>
-                                <div class="card">
-                                    <i
-                                        class="blue fa-solid fa-spinner fa-2x mb-10 c-blue"
-                                        aria-hidden="true"
-                                    ></i>
-                                    <p>500</p>
-                                    <p>Pending</p>
-                                </div>
-                                <div class="card">
-                                    <i
-                                        class="green fa-regular fa-circle-check fa-2x mb-10 c-green"
-                                        aria-hidden="true"
-                                    ></i>
-                                    <p>1900</p>
-                                    <p>Closed</p>
-                                </div>
-                                <div class="card">
-                                    <i
-                                        class="red fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"
-                                        aria-hidden="true"
-                                    ></i>
-                                    <p>100</p>
-                                    <p>Deleted</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news">
-                            <h3 class="mb-20">Latest News</h3>
-                            <div class="widget">
-                                <img src="Images/news-01.webp" alt="news" />
-                                <div class="info">
-                                    <p>Created SASS Section</p>
-                                    <p>New SASS Examples & Tutorials</p>
-                                </div>
-                                <div class="time">3 Days Ago</div>
-                            </div>
-                            <div class="widget">
-                                <img src="Images/news-02.webp" alt="news" />
-                                <div class="info">
-                                    <p>Changed The Design</p>
-                                    <p>A Brand New Website Design</p>
-                                </div>
-                                <div class="time">5 Days Ago</div>
-                            </div>
-                            <div class="widget">
-                                <img src="Images/news-03.webp" alt="news" />
-                                <div class="info">
-                                    <p>Team Increased</p>
-                                    <p>3 Developers Joined The Team</p>
-                                </div>
-                                <div class="time">7 Days Ago</div>
-                            </div>
-                            <div class="widget">
-                                <img src="Images/news-04.webp" alt="news" />
-                                <div class="info">
-                                    <p>Added Payment Gateway</p>
-                                    <p>Many New Payment Gateways Added</p>
-                                </div>
-                                <div class="time">9 Days Ago</div>
-                            </div>
-                        </div>
-                        <div class="tasks">
-                            <h3 class="mb-20">Latest Tasks</h3>
-                            <div class="widget">
-                                <div class="info">
-                                    <p class="title">Record One New Videe</p>
-                                    <p>Record Python Create Exe Project</p>
-                                </div>
-                                <i
-                                    class="fa-regular fa-trash-can delete"
-                                    aria-hidden="true"
-                                ></i>
-                            </div>
-                            <div class="widget">
-                                <div class="info">
-                                    <p class="title">Write Article</p>
-                                    <p>
-                                        Write Low Level vs High Level Languages
-                                    </p>
-                                </div>
-                                <i
-                                    class="fa-regular fa-trash-can delete"
-                                    aria-hidden="true"
-                                ></i>
-                            </div>
-                            <div class="widget">
-                                <div class="info">
-                                    <p class="title">Finish Project</p>
-                                    <p>Publish Academy Programming Project</p>
-                                </div>
-                                <i
-                                    class="fa-regular fa-trash-can delete"
-                                    aria-hidden="true"
-                                ></i>
-                            </div>
-                            <div class="widget deleted">
-                                <div class="info">
-                                    <p class="title">Attend The Meeting</p>
-                                    <p>
-                                        Attend The Project Business Analysis
-                                        Meeting
-                                    </p>
-                                </div>
-                                <i
-                                    class="fa-regular fa-trash-can delete"
-                                    aria-hidden="true"
-                                ></i>
-                            </div>
-                            <div class="widget">
-                                <div class="info">
-                                    <p class="title">Finish Lesson</p>
-                                    <p>Finish Teaching Flex Box</p>
-                                </div>
-                                <i
-                                    class="fa-regular fa-trash-can delete"
-                                    aria-hidden="true"
-                                ></i>
-                            </div>
-                        </div>
-                        <div class="top-search">
-                            <h3>Top Search Items</h3>
-                            <div class="line">
-                                <div>Keyword</div>
-                                <div>Search Count</div>
-                            </div>
-                            <div class="line">
-                                <div>Programming</div>
-                                <div>220</div>
-                            </div>
-                            <div class="line">
-                                <div>JavaScript</div>
-                                <div>180</div>
-                            </div>
-                            <div class="line">
-                                <div>Python</div>
-                                <div>160</div>
-                            </div>
-                            <div class="line">
-                                <div>Code</div>
-                                <div>145</div>
-                            </div>
-                            <div class="line">
-                                <div>Design</div>
-                                <div>110</div>
-                            </div>
-                            <div class="line">
-                                <div>Logic</div>
-                                <div>95</div>
-                            </div>
-                        </div>
-                        <div class="uploads">
-                            <h3>Latest Uploads</h3>
-                            <div class="widget">
-                                <div class="info">
-                                    <img src="Images/pdf.svg" alt="Pdf" />
-                                    <div class="text">
-                                        <p>my-file.pdf</p>
-                                        <span>Mohanad</span>
-                                    </div>
-                                </div>
-                                <span class="size">2.9mb</span>
-                            </div>
-                            <div class="widget">
-                                <div class="info">
-                                    <img src="Images/avi.svg" alt="Avi" />
-                                    <div class="text">
-                                        <p>My-Video-File.avi</p>
-                                        <span>Admin</span>
-                                    </div>
-                                </div>
-                                <span class="size">4.9mb</span>
-                            </div>
-                            <div class="widget">
-                                <div class="info">
-                                    <img src="Images/psd.svg" alt="PSD" />
-                                    <div class="text">
-                                        <p>My-Psd-File.pdf</p>
-                                        <span>Mohanad</span>
-                                    </div>
-                                </div>
-                                <span class="size">4.5mb</span>
-                            </div>
-                            <div class="widget">
-                                <div class="info">
-                                    <img src="Images/zip.svg" alt="zip" />
-                                    <div class="text">
-                                        <p>My-Zip-File.pdf</p>
-                                        <span>User</span>
-                                    </div>
-                                </div>
-                                <span class="size">8.9mb</span>
-                            </div>
-                            <div class="widget">
-                                <div class="info">
-                                    <img src="Images/dll.svg" alt="Dll" />
-                                    <div class="text">
-                                        <p>My-DLL-File.pdf</p>
-                                        <span>Admin</span>
-                                    </div>
-                                </div>
-                                <span class="size">4.9mb</span>
-                            </div>
-                            <div class="widget">
-                                <div class="info">
-                                    <img src="Images/eps.svg" alt="Pdf" />
-                                    <div class="text">
-                                        <p>My-Eps-File.pdf</p>
-                                        <span>Designer</span>
-                                    </div>
-                                </div>
-                                <span class="size">8.9mb</span>
-                            </div>
-                        </div>
-                        <div class="last-projects">
-                            <h3 class="mb-25">Last Project Progress</h3>
-                            <ul class="projects">
-                                <li>
-                                    <p>Got The Project</p>
-                                </li>
-                                <li>
-                                    <p>Started The Project</p>
-                                </li>
-                                <li>
-                                    <p>The Project About To Finish</p>
-                                </li>
-                                <li>
-                                    <p>Test The Project</p>
-                                </li>
-                                <li>
-                                    <p>Finish The Project & Get Money</p>
-                                </li>
-                            </ul>
-                            <img src="Images/project.webp" alt="plane" />
-                        </div>
-                        <div class="reminders">
-                            <h3 class="mb-25">Reminders</h3>
-                            <div class="widget bl">
-                                <span></span>
-                                <div class="info">
-                                    <span class="re1">Check My Tasks List</span>
-                                    <span class="time"
-                                        >28/09/2022 - 12:00am</span
-                                    >
-                                </div>
-                            </div>
-                            <div class="widget gr">
-                                <span></span>
-                                <div class="info">
-                                    <span class="re1">Check My Projects</span>
-                                    <span class="time"
-                                        >28/10/2022 - 12:00am</span
-                                    >
-                                </div>
-                            </div>
-                            <div class="widget ora">
-                                <span></span>
-                                <div class="info">
-                                    <span class="re1">Call All My Clients</span>
-                                    <span class="time"
-                                        >28/11/2022 - 12:00am</span
-                                    >
-                                </div>
-                            </div>
-                            <div class="widget re">
-                                <span></span>
-                                <div class="info">
-                                    <span class="re1"
-                                        >Finish The Development Workshop</span
-                                    >
-                                    <span class="time"
-                                        >28/12/2022 - 12:00am</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post">
-                            <h3 class="mb-25">Latest Post</h3>
-                            <div class="user">
-                                <img src="Images/dark.webp" alt="User" />
-                                <div class="info">
-                                    <span class="name">Mohanad Ayoub</span>
-                                    <span class="time">About 3 Hours Ago</span>
-                                </div>
-                            </div>
-                            <div class="para">
-                                You can fool all of the people some of the time,
-                                and some of the people all of the time, but you
-                                can't fool all of the people all of the time.
-                            </div>
-                            <div class="footer">
-                                <div class="likes">
-                                    <i
-                                        class="fa-regular fa-heart"
-                                        aria-hidden="true"
-                                    ></i>
-                                    <span>1.8K</span>
-                                </div>
-                                <div class="shares">
-                                    <i
-                                        class="fa-regular fa-comments"
-                                        aria-hidden="true"
-                                    ></i>
-                                    <span>500</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="social-media">
-                            <h3 class="mb-25">Social Media Stats</h3>
-                            <div class="line twtr">
-                                <div class="icon">
-                                    <i
-                                        class="fa-brands fa-twitter fa-2x c-white h-full center-flex"
-                                        aria-hidden="true"
-                                    ></i>
-                                </div>
-                                <div class="info">
-                                    <span class="number">90K Followers</span>
-                                    <a href="#">Follow</a>
-                                </div>
-                            </div>
-                            <div class="line face">
-                                <div class="icon">
-                                    <i
-                                        class="fa-brands fa-facebook-f fa-2x c-white h-full center-flex"
-                                        aria-hidden="true"
-                                    ></i>
-                                </div>
-                                <div class="info">
-                                    <span class="number">2M Like</span>
-                                    <a href="#">Like</a>
-                                </div>
-                            </div>
-                            <div class="line you">
-                                <div class="icon">
-                                    <i
-                                        class="fa-brands fa-youtube fa-2x c-white h-full center-flex"
-                                        aria-hidden="true"
-                                    ></i>
-                                </div>
-                                <div class="info">
-                                    <span class="number">1M Subs</span>
-                                    <a href="#">Subscribe</a>
-                                </div>
-                            </div>
-                            <div class="line link">
-                                <div class="icon">
-                                    <i
-                                        class="fa-brands fa-linkedin fa-2x c-white h-full center-flex"
-                                        aria-hidden="true"
-                                    ></i>
-                                </div>
-                                <div class="info">
-                                    <span class="number">70K Followers</span>
-                                    <a href="#">Follow</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects bg-white rad-10 m-20 p-20">
-                        <h3 class="mb-20">Projects</h3>
-                        <div class="table-holder">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <td>Name</td>
-                                        <td>Finish Date</td>
-                                        <td>Client</td>
-                                        <td>Price</td>
-                                        <td>Team</td>
-                                        <td>Status</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Ministry Wikipedia</td>
-                                        <td>10 May 2022</td>
-                                        <td>Ministry</td>
-                                        <td>$5300</td>
-                                        <td class="profile-imgs">
-                                            <img
-                                                src="Images/team-01.webp"
-                                                alt="team1"
-                                            />
-                                            <img
-                                                src="Images/team-02.webp"
-                                                alt="team2"
-                                            /><img
-                                                src="Images/team-03.webp"
-                                                alt="team3"
-                                            /><img
-                                                src="Images/team-05.webp"
-                                                alt="team5"
-                                            />
-                                        </td>
-                                        <td>
-                                            <span class="pend">Pending</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mohanad Shop</td>
-                                        <td>12 Oct 2021</td>
-                                        <td>Mohanad Company</td>
-                                        <td>$1500</td>
-                                        <td class="profile-imgs">
-                                            <img
-                                                src="Images/team-01.webp"
-                                                alt="team1"
-                                            /><img
-                                                src="Images/team-02.webp"
-                                                alt="team2"
-                                            /><img
-                                                src="Images/team-03.webp"
-                                                alt="team3"
-                                            />
-                                        </td>
-                                        <td>
-                                            <span class="in prog"
-                                                >In Progress</span
-                                            >
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bouba App</td>
-                                        <td>05 Sep 2021</td>
-                                        <td>Bouba</td>
-                                        <td>$800</td>
-                                        <td class="profile-imgs">
-                                            <img
-                                                src="Images/team-01.webp"
-                                                alt="team1"
-                                            /><img
-                                                src="Images/team-02.webp"
-                                                alt="team2"
-                                            />
-                                        </td>
-                                        <td>
-                                            <span class="complete"
-                                                >Completed</span
-                                            >
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mahmoud Website</td>
-                                        <td>22 May 2021</td>
-                                        <td>Mahmoud</td>
-                                        <td>$600</td>
-                                        <td class="profile-imgs">
-                                            <img
-                                                src="Images/team-01.webp"
-                                                alt="team1"
-                                            /><img
-                                                src="Images/team-02.webp"
-                                                alt="team2"
-                                            />
-                                        </td>
-                                        <td>
-                                            <span class="complete"
-                                                >Completed</span
-                                            >
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sayed Website</td>
-                                        <td>24 May 2021</td>
-                                        <td>Sayed</td>
-                                        <td>$300</td>
-                                        <td class="profile-imgs">
-                                            <img
-                                                src="Images/team-01.webp"
-                                                alt="team1"
-                                            /><img
-                                                src="Images/team-02.webp"
-                                                alt="team2"
-                                            />
-                                        </td>
-                                        <td>
-                                            <span class="reject">Rejected</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Arena Application</td>
-                                        <td>01 Mar 2021</td>
-                                        <td>Arena Company</td>
-                                        <td>$2600</td>
-                                        <td class="profile-imgs">
-                                            <img
-                                                src="Images/team-01.webp"
-                                                alt="team1"
-                                            />
-                                            <img
-                                                src="Images/team-02.webp"
-                                                alt="team2"
-                                            /><img
-                                                src="Images/team-03.webp"
-                                                alt="team3"
-                                            /><img
-                                                src="Images/team-05.webp"
-                                                alt="team5"
-                                            />
-                                        </td>
-                                        <td>
-                                            <span class="complete"
-                                                >Completed</span
-                                            >
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script src="JS/main.js"></script>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="HTML&CSS Full Template" />
+		<meta name="author" content="Mohanad Ayoub" />
+		<meta name="keywords" content="HTML, CSS" />
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="Css/framework.css" />
+		<link rel="stylesheet" href="Css/master.css" />
+		<!-- calling Font Awsome library -->
+		<link rel="stylesheet" href="Css/all.min.css" />
+		<!-- Make all elements render normally -->
+		<link rel="stylesheet" href="Css/normalize.css" />
+		<!-- getting Cairo font from google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="page d-flex">
+			<div class="sidebar">
+				<h2 class="txt-c">Mohanad</h2>
+				<nav>
+					<ul
+						class="d-flex"
+						id="Menu"
+						aria-label="Navigation Menu"
+						aria-controls="Menu"
+						aria-expanded="true"
+					>
+						<li>
+							<a href="index.html" class="p-10 mb-5 rad-6"
+								><i class="fa-regular fa-chart-bar fa-fw" aria-hidden="true"></i
+								><span class="ml-10">Dashboard</span></a
+							>
+						</li>
+						<li>
+							<a href="settings.html" class="mb-5 p-10 rad-6-10"
+								><i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i
+								><span class="ml-10">Settings</span></a
+							>
+						</li>
+						<li>
+							<a href="profile.html" class="mb-5 p-10 rad-6-10"
+								><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i
+								><span class="ml-10">Profile</span></a
+							>
+						</li>
+						<li>
+							<a href="projects.html" class="mb-5 p-10 rad-6-10"
+								><i
+									class="fa-solid fa-diagram-project fa-fw"
+									aria-hidden="true"
+								></i
+								><span class="ml-10">Projects</span></a
+							>
+						</li>
+						<li>
+							<a href="courses.html" class="mb-5 p-10 rad-6-10"
+								><i
+									class="fa-solid fa-graduation-cap fa-fw"
+									aria-hidden="true"
+								></i
+								><span class="ml-10">Courses</span></a
+							>
+						</li>
+						<li>
+							<a href="friend.html" class="mb-5 p-10 rad-6-10"
+								><i
+									class="fa-regular fa-circle-user fa-fw"
+									aria-hidden="true"
+								></i
+								><span class="ml-10">Friends</span></a
+							>
+						</li>
+						<li>
+							<a href="files.html" class="mb-5 p-10 rad-6-10"
+								><i class="fa-regular fa-file fa-fw" aria-hidden="true"></i
+								><span class="ml-10">Files</span></a
+							>
+						</li>
+						<li>
+							<a href="plans.html" class="mb-5 p-10 rad-6-10"
+								><i
+									class="fa-regular fa-credit-card fa-fw"
+									aria-hidden="true"
+								></i
+								><span class="ml-10">Plans</span></a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="content">
+				<header class="d-flex p-15 bg-white">
+					<div class="search">
+						<input
+							type="search"
+							name="search"
+							class="search p-10"
+							placeholder="Type A Keyword"
+						/>
+					</div>
+					<div class="user">
+						<span
+							><i class="fa-regular fa-bell fa-lg mr-10" aria-hidden="true"></i
+						></span>
+						<img
+							decoding="async"
+							src="Images/dark.webp"
+							alt="profile"
+							class="circle"
+						/>
+					</div>
+				</header>
+				<div class="content">
+					<h1>Dashboard</h1>
+					<div class="boards mr-20 ml-20 grid-sys">
+						<div class="welcome">
+							<div class="head p-20">
+								<div class="text">
+									<h3 class="">Welcome</h3>
+									<p>Mohanad</p>
+								</div>
+								<div class="image">
+									<img decoding="async" src="Images/laptop.webp" alt="laptop" />
+								</div>
+								<img
+									decoding="async"
+									src="Images/dark.webp"
+									alt="profile"
+									class="circle"
+								/>
+							</div>
+							<ul class="stats p-20 mt-20 mb-20">
+								<li>
+									Mohanad Ayoub
+									<p>Developer</p>
+								</li>
+								<li>
+									80
+									<p>Projects</p>
+								</li>
+								<li>
+									$8500
+									<p>Earned</p>
+								</li>
+							</ul>
+							<a href="profile.html" class="rad-6">Profie</a>
+						</div>
+						<div class="draft bg-white">
+							<h3 class="">Quick draft</h3>
+							<p>Write A Draft For Your Ideas</p>
+							<form action="">
+								<input type="text" name="title" placeholder="Title" />
+								<textarea name="Thought" placeholder="Your Thought"></textarea>
+								<input type="submit" value="Save" />
+							</form>
+						</div>
+						<div class="yearly-target">
+							<h3>Yearly Target</h3>
+							<p>Targets Of The Year</p>
+							<div class="line b">
+								<div class="icon blue">
+									<i
+										class="fa-solid fa-dollar-sign fa-lg c-blue"
+										aria-hidden="true"
+									></i>
+								</div>
+								<div class="prog">
+									<p>Money</p>
+									<div class="details">
+										<span class="number">$20.000</span>
+										<span class="b80">80%</span>
+									</div>
+									<span class="bar"></span>
+								</div>
+							</div>
+							<div class="line r">
+								<div class="icon red">
+									<i
+										class="fa-solid fa-code fa-lg c-orange"
+										aria-hidden="true"
+									></i>
+								</div>
+								<div class="prog">
+									<p>Projects</p>
+									<div class="details">
+										<span class="number">24</span>
+										<span class="r55">55%</span>
+									</div>
+									<span class="bar"></span>
+								</div>
+							</div>
+							<div class="line g">
+								<div class="icon green">
+									<i
+										class="fa-solid fa-user fa-lg c-green"
+										aria-hidden="true"
+									></i>
+								</div>
+								<div class="prog">
+									<p>Team</p>
+									<div class="details">
+										<span class="number">12</span>
+										<span class="g75">75%</span>
+									</div>
+									<span class="bar"></span>
+								</div>
+							</div>
+						</div>
+						<div class="ticket">
+							<h3>Tickets Statistics</h3>
+							<p>Everything About Support Tickets</p>
+							<div class="cards-holder">
+								<div class="card">
+									<i
+										class="orange fa-regular fa-rectangle-list fa-2x mb-10 c-orange"
+										aria-hidden="true"
+									></i>
+									<p>2500</p>
+									<p>Total</p>
+								</div>
+								<div class="card">
+									<i
+										class="blue fa-solid fa-spinner fa-2x mb-10 c-blue"
+										aria-hidden="true"
+									></i>
+									<p>500</p>
+									<p>Pending</p>
+								</div>
+								<div class="card">
+									<i
+										class="green fa-regular fa-circle-check fa-2x mb-10 c-green"
+										aria-hidden="true"
+									></i>
+									<p>1900</p>
+									<p>Closed</p>
+								</div>
+								<div class="card">
+									<i
+										class="red fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"
+										aria-hidden="true"
+									></i>
+									<p>100</p>
+									<p>Deleted</p>
+								</div>
+							</div>
+						</div>
+						<div class="news">
+							<h3 class="mb-20">Latest News</h3>
+							<div class="widget">
+								<img decoding="async" src="Images/news-01.webp" alt="news" />
+								<div class="info">
+									<p>Created SASS Section</p>
+									<p>New SASS Examples & Tutorials</p>
+								</div>
+								<div class="time">3 Days Ago</div>
+							</div>
+							<div class="widget">
+								<img decoding="async" src="Images/news-02.webp" alt="news" />
+								<div class="info">
+									<p>Changed The Design</p>
+									<p>A Brand New Website Design</p>
+								</div>
+								<div class="time">5 Days Ago</div>
+							</div>
+							<div class="widget">
+								<img decoding="async" src="Images/news-03.webp" alt="news" />
+								<div class="info">
+									<p>Team Increased</p>
+									<p>3 Developers Joined The Team</p>
+								</div>
+								<div class="time">7 Days Ago</div>
+							</div>
+							<div class="widget">
+								<img decoding="async" src="Images/news-04.webp" alt="news" />
+								<div class="info">
+									<p>Added Payment Gateway</p>
+									<p>Many New Payment Gateways Added</p>
+								</div>
+								<div class="time">9 Days Ago</div>
+							</div>
+						</div>
+						<div class="tasks">
+							<h3 class="mb-20">Latest Tasks</h3>
+							<div class="widget">
+								<div class="info">
+									<p class="title">Record One New Videe</p>
+									<p>Record Python Create Exe Project</p>
+								</div>
+								<i
+									class="fa-regular fa-trash-can delete"
+									aria-hidden="true"
+								></i>
+							</div>
+							<div class="widget">
+								<div class="info">
+									<p class="title">Write Article</p>
+									<p>Write Low Level vs High Level Languages</p>
+								</div>
+								<i
+									class="fa-regular fa-trash-can delete"
+									aria-hidden="true"
+								></i>
+							</div>
+							<div class="widget">
+								<div class="info">
+									<p class="title">Finish Project</p>
+									<p>Publish Academy Programming Project</p>
+								</div>
+								<i
+									class="fa-regular fa-trash-can delete"
+									aria-hidden="true"
+								></i>
+							</div>
+							<div class="widget deleted">
+								<div class="info">
+									<p class="title">Attend The Meeting</p>
+									<p>Attend The Project Business Analysis Meeting</p>
+								</div>
+								<i
+									class="fa-regular fa-trash-can delete"
+									aria-hidden="true"
+								></i>
+							</div>
+							<div class="widget">
+								<div class="info">
+									<p class="title">Finish Lesson</p>
+									<p>Finish Teaching Flex Box</p>
+								</div>
+								<i
+									class="fa-regular fa-trash-can delete"
+									aria-hidden="true"
+								></i>
+							</div>
+						</div>
+						<div class="top-search">
+							<h3>Top Search Items</h3>
+							<div class="line">
+								<div>Keyword</div>
+								<div>Search Count</div>
+							</div>
+							<div class="line">
+								<div>Programming</div>
+								<div>220</div>
+							</div>
+							<div class="line">
+								<div>JavaScript</div>
+								<div>180</div>
+							</div>
+							<div class="line">
+								<div>Python</div>
+								<div>160</div>
+							</div>
+							<div class="line">
+								<div>Code</div>
+								<div>145</div>
+							</div>
+							<div class="line">
+								<div>Design</div>
+								<div>110</div>
+							</div>
+							<div class="line">
+								<div>Logic</div>
+								<div>95</div>
+							</div>
+						</div>
+						<div class="uploads">
+							<h3>Latest Uploads</h3>
+							<div class="widget">
+								<div class="info">
+									<img decoding="async" src="Images/pdf.svg" alt="Pdf" />
+									<div class="text">
+										<p>my-file.pdf</p>
+										<span>Mohanad</span>
+									</div>
+								</div>
+								<span class="size">2.9mb</span>
+							</div>
+							<div class="widget">
+								<div class="info">
+									<img decoding="async" src="Images/avi.svg" alt="Avi" />
+									<div class="text">
+										<p>My-Video-File.avi</p>
+										<span>Admin</span>
+									</div>
+								</div>
+								<span class="size">4.9mb</span>
+							</div>
+							<div class="widget">
+								<div class="info">
+									<img decoding="async" src="Images/psd.svg" alt="PSD" />
+									<div class="text">
+										<p>My-Psd-File.pdf</p>
+										<span>Mohanad</span>
+									</div>
+								</div>
+								<span class="size">4.5mb</span>
+							</div>
+							<div class="widget">
+								<div class="info">
+									<img decoding="async" src="Images/zip.svg" alt="zip" />
+									<div class="text">
+										<p>My-Zip-File.pdf</p>
+										<span>User</span>
+									</div>
+								</div>
+								<span class="size">8.9mb</span>
+							</div>
+							<div class="widget">
+								<div class="info">
+									<img decoding="async" src="Images/dll.svg" alt="Dll" />
+									<div class="text">
+										<p>My-DLL-File.pdf</p>
+										<span>Admin</span>
+									</div>
+								</div>
+								<span class="size">4.9mb</span>
+							</div>
+							<div class="widget">
+								<div class="info">
+									<img decoding="async" src="Images/eps.svg" alt="Pdf" />
+									<div class="text">
+										<p>My-Eps-File.pdf</p>
+										<span>Designer</span>
+									</div>
+								</div>
+								<span class="size">8.9mb</span>
+							</div>
+						</div>
+						<div class="last-projects">
+							<h3 class="mb-25">Last Project Progress</h3>
+							<ul class="projects">
+								<li>
+									<p>Got The Project</p>
+								</li>
+								<li>
+									<p>Started The Project</p>
+								</li>
+								<li>
+									<p>The Project About To Finish</p>
+								</li>
+								<li>
+									<p>Test The Project</p>
+								</li>
+								<li>
+									<p>Finish The Project & Get Money</p>
+								</li>
+							</ul>
+							<img decoding="async" src="Images/project.webp" alt="plane" />
+						</div>
+						<div class="reminders">
+							<h3 class="mb-25">Reminders</h3>
+							<div class="widget bl">
+								<span></span>
+								<div class="info">
+									<span class="re1">Check My Tasks List</span>
+									<span class="time">28/09/2022 - 12:00am</span>
+								</div>
+							</div>
+							<div class="widget gr">
+								<span></span>
+								<div class="info">
+									<span class="re1">Check My Projects</span>
+									<span class="time">28/10/2022 - 12:00am</span>
+								</div>
+							</div>
+							<div class="widget ora">
+								<span></span>
+								<div class="info">
+									<span class="re1">Call All My Clients</span>
+									<span class="time">28/11/2022 - 12:00am</span>
+								</div>
+							</div>
+							<div class="widget re">
+								<span></span>
+								<div class="info">
+									<span class="re1">Finish The Development Workshop</span>
+									<span class="time">28/12/2022 - 12:00am</span>
+								</div>
+							</div>
+						</div>
+						<div class="post">
+							<h3 class="mb-25">Latest Post</h3>
+							<div class="user">
+								<img decoding="async" src="Images/dark.webp" alt="User" />
+								<div class="info">
+									<span class="name">Mohanad Ayoub</span>
+									<span class="time">About 3 Hours Ago</span>
+								</div>
+							</div>
+							<div class="para">
+								You can fool all of the people some of the time, and some of the
+								people all of the time, but you can't fool all of the people all
+								of the time.
+							</div>
+							<div class="footer">
+								<div class="likes">
+									<i class="fa-regular fa-heart" aria-hidden="true"></i>
+									<span>1.8K</span>
+								</div>
+								<div class="shares">
+									<i class="fa-regular fa-comments" aria-hidden="true"></i>
+									<span>500</span>
+								</div>
+							</div>
+						</div>
+						<div class="social-media">
+							<h3 class="mb-25">Social Media Stats</h3>
+							<div class="line twtr">
+								<div class="icon">
+									<i
+										class="fa-brands fa-twitter fa-2x c-white h-full center-flex"
+										aria-hidden="true"
+									></i>
+								</div>
+								<div class="info">
+									<span class="number">90K Followers</span>
+									<a href="#">Follow</a>
+								</div>
+							</div>
+							<div class="line face">
+								<div class="icon">
+									<i
+										class="fa-brands fa-facebook-f fa-2x c-white h-full center-flex"
+										aria-hidden="true"
+									></i>
+								</div>
+								<div class="info">
+									<span class="number">2M Like</span>
+									<a href="#">Like</a>
+								</div>
+							</div>
+							<div class="line you">
+								<div class="icon">
+									<i
+										class="fa-brands fa-youtube fa-2x c-white h-full center-flex"
+										aria-hidden="true"
+									></i>
+								</div>
+								<div class="info">
+									<span class="number">1M Subs</span>
+									<a href="#">Subscribe</a>
+								</div>
+							</div>
+							<div class="line link">
+								<div class="icon">
+									<i
+										class="fa-brands fa-linkedin fa-2x c-white h-full center-flex"
+										aria-hidden="true"
+									></i>
+								</div>
+								<div class="info">
+									<span class="number">70K Followers</span>
+									<a href="#">Follow</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="projects bg-white rad-10 m-20 p-20">
+						<h3 class="mb-20">Projects</h3>
+						<div class="table-holder">
+							<table>
+								<thead>
+									<tr>
+										<td>Name</td>
+										<td>Finish Date</td>
+										<td>Client</td>
+										<td>Price</td>
+										<td>Team</td>
+										<td>Status</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Ministry Wikipedia</td>
+										<td>10 May 2022</td>
+										<td>Ministry</td>
+										<td>$5300</td>
+										<td class="profile-imgs">
+											<img
+												decoding="async"
+												src="Images/team-01.webp"
+												alt="team1"
+											/>
+											<img
+												decoding="async"
+												src="Images/team-02.webp"
+												alt="team2"
+											/><img
+												decoding="async"
+												src="Images/team-03.webp"
+												alt="team3"
+											/><img
+												decoding="async"
+												src="Images/team-05.webp"
+												alt="team5"
+											/>
+										</td>
+										<td>
+											<span class="pend">Pending</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Mohanad Shop</td>
+										<td>12 Oct 2021</td>
+										<td>Mohanad Company</td>
+										<td>$1500</td>
+										<td class="profile-imgs">
+											<img
+												decoding="async"
+												src="Images/team-01.webp"
+												alt="team1"
+											/><img
+												decoding="async"
+												src="Images/team-02.webp"
+												alt="team2"
+											/><img
+												decoding="async"
+												src="Images/team-03.webp"
+												alt="team3"
+											/>
+										</td>
+										<td>
+											<span class="in prog">In Progress</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Bouba App</td>
+										<td>05 Sep 2021</td>
+										<td>Bouba</td>
+										<td>$800</td>
+										<td class="profile-imgs">
+											<img
+												decoding="async"
+												src="Images/team-01.webp"
+												alt="team1"
+											/><img
+												decoding="async"
+												src="Images/team-02.webp"
+												alt="team2"
+											/>
+										</td>
+										<td>
+											<span class="complete">Completed</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Mahmoud Website</td>
+										<td>22 May 2021</td>
+										<td>Mahmoud</td>
+										<td>$600</td>
+										<td class="profile-imgs">
+											<img
+												decoding="async"
+												src="Images/team-01.webp"
+												alt="team1"
+											/><img
+												decoding="async"
+												src="Images/team-02.webp"
+												alt="team2"
+											/>
+										</td>
+										<td>
+											<span class="complete">Completed</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Sayed Website</td>
+										<td>24 May 2021</td>
+										<td>Sayed</td>
+										<td>$300</td>
+										<td class="profile-imgs">
+											<img
+												decoding="async"
+												src="Images/team-01.webp"
+												alt="team1"
+											/><img
+												decoding="async"
+												src="Images/team-02.webp"
+												alt="team2"
+											/>
+										</td>
+										<td>
+											<span class="reject">Rejected</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Arena Application</td>
+										<td>01 Mar 2021</td>
+										<td>Arena Company</td>
+										<td>$2600</td>
+										<td class="profile-imgs">
+											<img
+												decoding="async"
+												src="Images/team-01.webp"
+												alt="team1"
+											/>
+											<img
+												decoding="async"
+												src="Images/team-02.webp"
+												alt="team2"
+											/><img
+												decoding="async"
+												src="Images/team-03.webp"
+												alt="team3"
+											/><img
+												decoding="async"
+												src="Images/team-05.webp"
+												alt="team5"
+											/>
+										</td>
+										<td>
+											<span class="complete">Completed</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="JS/main.js"></script>
+	</body>
 </html>
